@@ -33,7 +33,7 @@ cmd('git add *') 	#updates changes made inside files
 cmd('git add -u') 	#updated deleted files			
 cmd('git status')	#displays changes to be pushed to github
 cmd("git commit -m '"+comment+"'")
-cmd('git push')		#push changes to github
-cmd('ssh-add -D')	#removes identities - requires password after commit
+cmd('git push orgin master')		#push changes to github
+#cmd('ssh-add -D')	#removes identities - requires password after commit
 print 
 print colors.YELLOW + "Update Complete!!" + colors.WHITE
