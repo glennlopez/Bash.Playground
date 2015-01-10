@@ -23,7 +23,7 @@ def cmd(cmd):
 # COMMANDS TO EXECUTE
 ##########################
 cmd('clear')
-print colors.BOLD + "Github Pull Script" + colors.WHITE			
+print colors.BOLD + "Github Pull Script" + colors.GREEN			
 cmd('git pull orgin master')		#push changes to github
 print 
-print colors.YELLOW + "Pull Complete!!" + colors.WHITE
+print colors.YELLOW + "Pull Complete: Local files updated!!" + colors.WHITE
