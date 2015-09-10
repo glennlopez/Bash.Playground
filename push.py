@@ -5,9 +5,9 @@ Visit - https://help.github.com/articles/generating-ssh-keys
 to setup your SSH keys..
 '''
 import subprocess
-import os 
+import os
 
-# Colors the text
+# Colors the text (glenn)
 class colors:
     PURPL = '\033[95m'
     BLUE = '\033[94m'
@@ -18,7 +18,7 @@ class colors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-# CMD FUNCTION - for running shell scripts 
+# CMD FUNCTION - for running shell scripts
 def cmd(cmd):
 	os.system(cmd)
 
@@ -28,13 +28,13 @@ def cmd(cmd):
 ##########################
 cmd('clear')
 print colors.BOLD + "Github Update Script" + colors.WHITE
-comment = raw_input(colors.GREEN + "Type your update comment: " + colors.WHITE)				
+comment = raw_input(colors.GREEN + "Type your update comment: " + colors.WHITE)
 cmd('git add *') 	#updates changes made inside files
-cmd('git add -u') 	#updated deleted files			
+cmd('git add -u') 	#updated deleted files
 cmd('git status')	#displays changes to be pushed to github
 cmd("git commit -m '"+comment+"'")
 cmd('git push') # comment this out if this method doesnt work
 #cmd('git push orgin master')		#push changes to github
 #cmd('ssh-add -D')	#removes identities - requires password after commit
-print 
+print
 print colors.YELLOW + "Update Complete!!" + colors.WHITE
