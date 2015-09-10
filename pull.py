@@ -1,7 +1,11 @@
 #!/usr/bin/env python
-
+'''
+This script auto updates (pulls) all changes from github to your
+local host. Visit - https://help.github.com/articles/generating-ssh-keys
+to setup your SSH keys..
+'''
 import subprocess
-import os 
+import os
 
 # Colors the text
 class colors:
@@ -14,7 +18,7 @@ class colors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-# CMD FUNCTION - for running shell scripts 
+# CMD FUNCTION - for running shell scripts
 def cmd(cmd):
 	os.system(cmd)
 
@@ -27,5 +31,6 @@ print colors.BOLD + "Github Pull Script" + colors.WHITE
 print colors.GREEN + "Copying files from github..." + colors.WHITE
 cmd('git pull') # comment this out if this doesnt work
 #cmd('git pull orgin master')		#pull changes from github
-print 
+print
 print colors.YELLOW + "Pull Complete: Local directory updated!!" + colors.WHITE
+# end of script

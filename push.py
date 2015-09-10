@@ -7,7 +7,7 @@ to setup your SSH keys..
 import subprocess
 import os
 
-# Colors the text (glenn)
+# Colors the text
 class colors:
     PURPL = '\033[95m'
     BLUE = '\033[94m'
@@ -33,8 +33,10 @@ cmd('git add *') 	#updates changes made inside files
 cmd('git add -u') 	#updated deleted files
 cmd('git status')	#displays changes to be pushed to github
 cmd("git commit -m '"+comment+"'")
-cmd('git push') # comment this out if this method doesnt work
+cmd('git push') # comment this out and use the one below if this method doesnt work
+
 #cmd('git push orgin master')		#push changes to github
 #cmd('ssh-add -D')	#removes identities - requires password after commit
+
 print
 print colors.YELLOW + "Update Complete!!" + colors.WHITE
