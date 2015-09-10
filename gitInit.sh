@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 '''
 This script should setup and initialize a git project for you.
 Visit - https://help.github.com/articles/generating-ssh-keys
@@ -13,19 +13,23 @@ to setup your SSH keys..
 # Check to see if git package is installed: ???
 
 # Install git:
-sudo apt-get install git
+	echo "Installing git..."
+	sudo apt-get install git
+	clear
 
 # Configure git user:
 	# setup username
 	echo "User Name:"
 	read usrUname
 	git config --global user.name $usrUname
+	clear
 
 # Configure email:
 	# setup email
 	echo "Email:"
 	read usrEmail
 	git config --global user.email $usrEmail
+	clear
 
 
 
