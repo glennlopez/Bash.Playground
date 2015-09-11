@@ -3,6 +3,7 @@
 This script auto updates (pulls) all changes from github to your
 local host. Visit - https://help.github.com/articles/generating-ssh-keys
 to setup your SSH keys..
+													- github.com/glennlopez
 '''
 import subprocess
 import os
