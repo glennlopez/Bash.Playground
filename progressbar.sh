@@ -1,13 +1,17 @@
 #!/bin/bash
-
+echo
 # progress bar
 pBar() {
-	echo "Starting user configuration:"
-	echo -ne '#####                     (33%)\r'
+	echo "Wait: Starting the next step"
+	echo -ne '###                       \r'
 	sleep 0.5
-	echo -ne '#############             (66%)\r'
+	echo -ne '########                  \r'
 	sleep 0.5
-	echo -ne '#######################   (100%)\r'
+	echo -ne '#############             \r'
+	sleep 0.5
+	echo -ne '##################        \r'
+	sleep 0.5
+	echo -ne '#######################   \r'
 	sleep 1
 	echo -ne '\n'
 }
