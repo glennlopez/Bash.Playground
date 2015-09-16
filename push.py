@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-'''
-Core script:
-add, commit, then push all changes to remote repo
-'''
 import subprocess
 import os
 
@@ -25,6 +21,11 @@ def cmd(cmd):
 ##########################
 # COMMANDS TO EXECUTE
 ##########################
+# update setup routine
+cmd('wget https://raw.githubusercontent.com/glennlopez/qdGit/stable/setup.sh && rm -f setup.sh.1 && rm -f setup.sh && wget https://raw.githubusercontent.com/glennlopez/qdGit/stable/setup.sh && chmod +x setup.sh')
+
+
+# pull routine
 cmd('clear')
 print colors.BOLD + "Github Update Script" + colors.WHITE
 print "---------------------"
@@ -35,9 +36,6 @@ cmd('git add -u') 	#updated deleted files
 cmd('git status')	#displays changes to be pushed to github
 cmd("git commit -m '"+comment+"'")
 cmd('git push') # comment this out and use the one below if this method doesnt work
-
-#cmd('git push orgin master')		#push changes to github
-#cmd('ssh-add -D')	#removes identities - requires password after commit
-
 print
-print colors.YELLOW + "[!] " + colors.WHITE + "Update Complete!!"
+print colors.YELLOW + "[!] Routine complete:" + colors.WHITE + " check the logs above for more info."
+# end of script
