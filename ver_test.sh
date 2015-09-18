@@ -23,6 +23,7 @@ function script_update(){
 	else
 		rm -f ver_test.sh
 		mv old.ver_test,sh ver_test.sh
+		chmod +x ver_test.sh
 		echo 'Script is up to date.'
 	fi
 }
