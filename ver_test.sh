@@ -3,7 +3,6 @@
 #version = 0.8
 #debug = 0
 ##########################
-gitURL=$https://raw.githubusercontent.com/glennlopez/Bash.Playground/master/ver_test.sh
 
 function script_update(){
 	# local script
@@ -12,7 +11,7 @@ function script_update(){
 	mv ver_test.sh old.ver_test.sh
 
 	# remote script
-	wget --quiet $gitURL
+	wget --quiet https://raw.githubusercontent.com/glennlopez/Bash.Playground/master/ver_test.sh
 	awk '{ if ($1 ~ /#version/) print local $3}' ver_test.sh > tmp
 	rem_ver=$(<tmp)
 
