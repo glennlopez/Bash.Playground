@@ -12,7 +12,7 @@ function script_update(){
 	echo $loc_ver #<--debug
 
 	# remote script
-	wget --quite https://raw.githubusercontent.com/glennlopez/Bash.Playground/master/ver_test.sh
+	wget --quiet https://raw.githubusercontent.com/glennlopez/Bash.Playground/master/ver_test.sh
 	awk '{ if ($1 ~ /#version/) print local $3}' ver_test.sh > tmp
 	rem_ver=$(<tmp)
 	echo $rem_ver #<--debug
