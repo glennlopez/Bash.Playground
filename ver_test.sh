@@ -3,6 +3,7 @@
 #version = 0.8
 #debug = 0
 ##########################
+
 function script_update(){
 	# local script
 	awk '{ if ($1 ~ /#version/) print local $3}' ver_test.sh > tmp
@@ -23,9 +24,11 @@ function script_update(){
 	else
 		rm -f ver_test.sh
 		mv old.ver_test.sh ver_test.sh
-		chmod +x ver_test.sh
 		echo 'Script is up to date.'
 	fi
+
+	chmod +x ver_test.sh
+	rm -f tmp
 }
 
 script_update
