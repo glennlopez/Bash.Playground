@@ -13,5 +13,5 @@ sed ':a;N;$!ba;s/\n/ /g' files.qdg > files_1.qdg
 dirFiles=$(<files_1.qdg)
 chmod +x $dirFiles
 
-# cleanup routine --
+# cleanup routine
 rm -f *.qdg
