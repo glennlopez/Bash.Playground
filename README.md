@@ -1,6 +1,6 @@
 Bash Playground
 =================
-This is where I keep all the things I do with Bash. This is a repo not only for showcasing my capabilities for employers to evaluate, but also for documenting my progress.
+This is where I keep all the things I do with Bash. This is a repo for showcasing my capabilities to future employers for ealuation, and to documenting my progress with Bash.
 
 ![alt text](http://matt.might.net/articles/bash-by-example/images/bash-script.png "Bash Logo")
 
